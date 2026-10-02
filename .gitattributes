@@ -1,2 +1,5 @@
-# Auto detect text files and perform LF normalization
+# Normalise line endings in the repository.
 * text=auto
+
+# Keep the X3DOM patch byte-exact so `git apply` works on every platform.
+*.patch text eol=lf

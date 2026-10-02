@@ -1,0 +1,17 @@
+{
+  "name": "nasp-forestry",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "NASP_*"
+  ],
+  "scripts": {
+    "start": "npm run build && npm run serve",
+    "build": "npm run build --workspaces && node scripts/copy-landing.js",
+    "serve": "node scripts/serve.js",
+    "serve:lan": "node scripts/serve.js --lan"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

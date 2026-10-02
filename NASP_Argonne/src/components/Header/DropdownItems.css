@@ -1,0 +1,26 @@
+.plots-submenu {
+  position: absolute;
+  top: 8%;
+  list-style: none;
+  z-index: 1;
+  background: #e2b842;
+}
+
+.submenu-item {
+  display: block;
+  text-decoration: none;
+  text-align: start;
+  color: black !important;
+  padding: 4% 10% !important;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  width: 10rem;
+  /* Action items are <button>s; drop the button look to match the links. */
+  background: none;
+  border: 0;
+}
+
+.submenu-item:hover {
+  background: #e2c77b !important;
+}

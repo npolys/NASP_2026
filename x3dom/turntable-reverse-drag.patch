@@ -1,0 +1,26 @@
+diff --git a/src/nodes/Navigation/modes/TurntableNavigation.js b/src/nodes/Navigation/modes/TurntableNavigation.js
+index 89e1b5d1..0db3b926 100644
+--- a/src/nodes/Navigation/modes/TurntableNavigation.js
++++ b/src/nodes/Navigation/modes/TurntableNavigation.js
+@@ -38,8 +38,8 @@ x3dom.TurntableNavigation.prototype.onDrag = function ( view, x, y, buttonState
+ 
+     if ( buttonState & 1 ) //left
+     {
+-        alpha = ( dy * 2 * Math.PI ) / view._height;
+-        beta = ( dx * 2 * Math.PI ) / view._width;
++        alpha = ( dy * 2 * Math.PI ) / view._height * navi._vf.speed * -1.0;
++        beta = ( dx * 2 * Math.PI ) / view._width * navi._vf.speed * -1.0;
+ 
+         this.rotate( view, alpha, beta );
+     }
+@@ -451,8 +451,8 @@ x3dom.TurntableNavigation.prototype.onTouchDrag = function ( view, evt, touches,
+             var dx = ( evt.touches[ 0 ].screenX - view._lastX );
+             var dy = ( evt.touches[ 0 ].screenY - view._lastY );
+ 
+-            var alpha = ( dy * 2 * Math.PI ) / view._height;
+-            var beta = ( dx * 2 * Math.PI ) / view._width;
++            var alpha = ( dy * 2 * Math.PI ) / view._height * this.navi._vf.speed * -1.0;
++            var beta = ( dx * 2 * Math.PI ) / view._width * this.navi._vf.speed * -1.0;
+ 
+             this.rotate( view, alpha, beta );
+ 

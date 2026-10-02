@@ -1,0 +1,67 @@
+.image {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+.points {
+  position: absolute;
+  width: 5%;
+  height: 6%;
+  border-radius: 100%;
+  cursor: pointer;
+  z-index: 0;
+  border: none;
+  background-color: transparent;
+}
+.point1 {
+  top: 59%;
+  right: 86%;
+}
+
+.point2 {
+  top: 81%;
+  right: 80%;
+}
+
+.point3 {
+  top: 53%;
+  right: 73%;
+}
+
+.point4 {
+  top: 74%;
+  right: 64%;
+}
+
+.point5 {
+  top: 42%;
+  right: 60%;
+}
+
+.point6 {
+  top: 62%;
+  right: 49%;
+}
+
+.point7 {
+  top: 27%;
+  right: 39%;
+}
+
+.point8 {
+  top: 44%;
+  right: 31%;
+}
+
+.point9 {
+  top: 11%;
+  right: 21%;
+}
+
+.point10 {
+  top: 26%;
+  right: 9%;
+}
